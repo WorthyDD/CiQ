@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jWF-SW-dlh">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="BjN-Hn-79X">
+                                <rect key="frame" x="70" y="124" width="180" height="180"/>
+                            </imageView>
+                            <searchBar contentMode="redraw" placeholder="Enter Your Name" translatesAutoresizingMaskIntoConstraints="NO" id="iaJ-yC-pdS">
+                                <rect key="frame" x="26" y="329" width="268" height="44"/>
+                                <color key="barTintColor" red="0.18823529410000001" green="0.82352941180000006" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="go"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="hq2-CG-Ho4"/>
+                                </connections>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CUq-Zb-84w">
+                                <rect key="frame" x="26" y="373" width="268" height="0.0"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="KXS-nB-Q41"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="V22-h5-hoE"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="FZm-j9-zgI"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="CUq-Zb-84w" firstAttribute="top" secondItem="iaJ-yC-pdS" secondAttribute="bottom" id="3L8-1B-fqH"/>
+                            <constraint firstItem="CUq-Zb-84w" firstAttribute="leading" secondItem="iaJ-yC-pdS" secondAttribute="leading" id="AYv-P2-Ft6"/>
+                            <constraint firstItem="BjN-Hn-79X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CwP-bV-K7M"/>
+                            <constraint firstItem="iaJ-yC-pdS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="FO6-PO-X9c"/>
+                            <constraint firstItem="BjN-Hn-79X" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="UBR-2s-VQH"/>
+                            <constraint firstItem="CUq-Zb-84w" firstAttribute="trailing" secondItem="iaJ-yC-pdS" secondAttribute="trailing" id="VbG-9j-gnR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iaJ-yC-pdS" secondAttribute="trailing" constant="10" id="bVb-jH-qyd"/>
+                            <constraint firstItem="iaJ-yC-pdS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="265" id="gWj-Mg-H6B"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="layerBorderColor">
+                                <color key="value" red="0.18823529411764706" green="0.82352941176470584" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layerBorderWidth">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <navigationItem key="navigationItem" title="Main" id="bJx-Ci-oa8"/>
+                    <connections>
+                        <outlet property="logo" destination="BjN-Hn-79X" id="hpr-Eg-WXj"/>
+                        <outlet property="searchBar" destination="iaJ-yC-pdS" id="2HX-oa-ncN"/>
+                        <outlet property="searchBarTop" destination="gWj-Mg-H6B" id="nMU-Lo-QBL"/>
+                        <outlet property="tableView" destination="CUq-Zb-84w" id="nXy-qC-Kkb"/>
+                        <outlet property="tableViewheight" destination="KXS-nB-Q41" id="YB7-4K-N72"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1020" y="32.74647887323944"/>
+        </scene>
+        <!--Set Font View Controller-->
+        <scene sceneID="TyB-X4-dhL">
+            <objects>
+                <viewController storyboardIdentifier="SetFontViewController" id="uxk-Kx-Fh0" customClass="SetFontViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aoE-El-jxy"/>
+                        <viewControllerLayoutGuide type="bottom" id="j1V-6J-6zb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gUk-kX-iBY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="57h-XG-Z4K">
+                                <rect key="frame" x="26" y="80" width="268" height="154"/>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="znf-AO-6TA">
+                                <rect key="frame" x="46" y="264" width="228" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="xUI-7N-HNd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Set Font">
+                                    <color key="titleColor" red="0.18823529410000001" green="0.82352941180000006" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layerCornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layerBorderColor">
+                                        <color key="value" red="0.18823529410000001" green="0.82352941180000006" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layerBorderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="handleTapSetFont:" destination="uxk-Kx-Fh0" eventType="touchUpInside" id="Fjs-78-qzS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BhP-Bp-1D0">
+                                <rect key="frame" x="46" y="334" width="228" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="alZ-ww-4jW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Begin Make">
+                                    <color key="titleColor" red="0.18823529410000001" green="0.82352941180000006" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layerCornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layerBorderColor">
+                                        <color key="value" red="0.18823529410000001" green="0.82352941180000006" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layerBorderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="handleTapBegin:" destination="uxk-Kx-Fh0" eventType="touchUpInside" id="IcF-uH-KXu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="BhP-Bp-1D0" firstAttribute="top" secondItem="znf-AO-6TA" secondAttribute="bottom" constant="30" id="7wD-do-Hbm"/>
+                            <constraint firstItem="57h-XG-Z4K" firstAttribute="leading" secondItem="gUk-kX-iBY" secondAttribute="leadingMargin" constant="10" id="Eft-8S-v4u"/>
+                            <constraint firstItem="BhP-Bp-1D0" firstAttribute="leading" secondItem="znf-AO-6TA" secondAttribute="leading" id="HY5-QO-SCd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="znf-AO-6TA" secondAttribute="trailing" constant="30" id="JrS-QL-HAw"/>
+                            <constraint firstItem="znf-AO-6TA" firstAttribute="centerY" secondItem="gUk-kX-iBY" secondAttribute="centerY" id="MJB-cf-hGM"/>
+                            <constraint firstItem="57h-XG-Z4K" firstAttribute="top" secondItem="aoE-El-jxy" secondAttribute="bottom" constant="60" id="MSz-vt-sf7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="57h-XG-Z4K" secondAttribute="trailing" constant="10" id="Mpk-0H-4TA"/>
+                            <constraint firstItem="znf-AO-6TA" firstAttribute="leading" secondItem="gUk-kX-iBY" secondAttribute="leadingMargin" constant="30" id="QM0-Qq-ki2"/>
+                            <constraint firstItem="BhP-Bp-1D0" firstAttribute="trailing" secondItem="znf-AO-6TA" secondAttribute="trailing" id="fVW-l8-qbV"/>
+                            <constraint firstItem="znf-AO-6TA" firstAttribute="top" secondItem="57h-XG-Z4K" secondAttribute="bottom" constant="30" id="otY-8n-RAh"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="layerBorderColor">
+                                <color key="value" red="0.18823529410000001" green="0.82352941180000006" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layerBorderWidth">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <connections>
+                        <outlet property="contentLabel" destination="57h-XG-Z4K" id="k9V-EQ-KlF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ppc-Pm-WKe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1786.875" y="34.859154929577464"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Svk-En-9Qb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jWF-SW-dlh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="C6r-zS-Sq0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="tFU-dn-KPO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Rw-0A-1pY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="214" y="33"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="180" height="180"/>
+    </resources>
+</document>
