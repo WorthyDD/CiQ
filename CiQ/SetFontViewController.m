@@ -8,10 +8,15 @@
 
 #import "SetFontViewController.h"
 #import "MakeViewController.h"
+#import "CustomActionSheetView.h"
+#import "Model.h"
 
 @interface SetFontViewController ()<UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *contentLabel;
+@property (weak, nonatomic) IBOutlet UIButton *setFontBn;
+@property (weak, nonatomic) IBOutlet UIButton *beginBn;
+@property (weak, nonatomic) IBOutlet UILabel *enNameLabel;
 @end
 
 @implementation SetFontViewController
@@ -20,7 +25,21 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self setTitle:@"Set Font"];
+    
+    
+    _enNameLabel.text = _content;
+    if ([[Model names].allKeys containsObject:_content]) {
+        _content = [Model names][_content];             
+    }
+    
     self.contentLabel.text = _content;
+    
+    [_setFontBn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [_setFontBn setBackgroundColor:THEME_COLOR];
+    [_beginBn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [_beginBn setBackgroundColor:THEME_COLOR];
+
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -28,18 +47,25 @@
     [self.navigationController setNavigationBarHidden:NO];
 }
 
+
+- (void)viewWillLayoutSubviews {
+    [super viewWillLayoutSubviews];
+    _setFontBn.layer.cornerRadius = self.setFontBn.frame.size.height/2;
+    _beginBn.layer.cornerRadius = self.beginBn.frame.size.height/2;
+}
 - (IBAction)handleTapSetFont:(id)sender {
     NSMutableArray *fonts = [NSMutableArray new];
     for(NSString *fa in [UIFont familyNames]) {
         NSArray *names = [UIFont fontNamesForFamilyName:fa];
         for (NSString *name in names) {
-            NSAttributedString *att = [[NSAttributedString alloc] initWithString:name attributes:@{NSFontAttributeName:[UIFont fontWithName:name size:17]}];
+            NSAttributedString *att = [[NSAttributedString alloc] initWithString:name attributes:@{NSFontAttributeName:[UIFont fontWithName:name size:32]}];
             [fonts addObject:att];
         }
     }
     [fonts sortUsingComparator:^NSComparisonResult(NSAttributedString * _Nonnull obj1, NSAttributedString * _Nonnull obj2) {
         return [obj1.string compare:obj2.string];
     }];
+    
     CustomActionSheetView *sheet = [[CustomActionSheetView alloc] initWithTitle:@"Select A Font" items:fonts.copy];
     sheet.handler = ^(NSInteger itemIndex) {
         NSString *name  =  ((NSAttributedString *)fonts[itemIndex]).string;

@@ -2,13 +2,12 @@
 //  CustomActionSheetView.m
 //  EmployeeAssistant
 //
-//  Created by 武淅 段 on 16/9/18.
-//  Copyright © 2016年 xxkuaipao. All rights reserved.
+//  Created by 武淅 段 on 17/04/19.
+//  Copyright © 2017年 . All rights reserved.
 //
 
 #import "CustomActionSheetView.h"
 #import "constant.h"
-#import "UIColor+TAToolkit.h"
 
 #define row_height 44
 
@@ -52,7 +51,7 @@
             UILabel *label = [[UILabel alloc]initWithFrame:header.bounds];
             [label setTextAlignment:NSTextAlignmentCenter];
             [label setFont:[UIFont systemFontOfSize:14.0f]];
-            [label setTextColor:[UIColor colorWithRGB:0x999999]];
+            [label setTextColor:[UIColor grayColor]];
             if([title isKindOfClass:[NSAttributedString class]]){
                 label.attributedText = (NSAttributedString*)title;
             }
@@ -72,10 +71,10 @@
         //        [line setBackgroundColor:[UIColor colorWithRGB:0xeeeeee]];
         //        [footerView addSubview:line];
         UILabel *cancleLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, row_height)];
-        [cancleLabel setTextColor:[UIColor colorWithRGB:0x666666]];
+        [cancleLabel setTextColor:[UIColor darkGrayColor]];
         [cancleLabel setFont:[UIFont systemFontOfSize:16.0]];
         [cancleLabel setTextAlignment:NSTextAlignmentCenter];
-        [cancleLabel setText:@"取消"];
+        [cancleLabel setText:@"Cancel"];
         [footerView addSubview:cancleLabel];
         [footerView setBackgroundColor:[UIColor whiteColor]];
         footerView.userInteractionEnabled = YES;
@@ -121,7 +120,7 @@
         [cell.textLabel setTextColor:THEME_COLOR];
     }
     else{
-        [cell.textLabel setTextColor:[UIColor colorWithRGB:0x333333]];
+        [cell.textLabel setTextColor:[UIColor darkTextColor]];
     }
     
     if([item isKindOfClass:[NSAttributedString class]]){
@@ -192,7 +191,7 @@
 {
     UITouch *touch = [touches anyObject];
     CGPoint location = [touch locationInView:self];
-    if(location.y<_tableView.y){       //实际上这一步是多余的  self接收不到响应
+    if(location.y<_tableView.frame.origin.y){
         [self dismiss];
     }
 }

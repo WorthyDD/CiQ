@@ -13,17 +13,16 @@
 		CC1349B81EA329DD00C62E9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC1349B61EA329DD00C62E9D /* Main.storyboard */; };
 		CC1349BA1EA329DD00C62E9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC1349B91EA329DD00C62E9D /* Assets.xcassets */; };
 		CC1349BD1EA329DD00C62E9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC1349BB1EA329DD00C62E9D /* LaunchScreen.storyboard */; };
-		CC1349CF1EA32BB900C62E9D /* UIColor+TAToolkit.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1349C61EA32BB900C62E9D /* UIColor+TAToolkit.m */; };
-		CC1349D01EA32BB900C62E9D /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1349C81EA32BB900C62E9D /* UIView+AutoLayout.m */; };
-		CC1349D11EA32BB900C62E9D /* UIView+Geometry.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1349CA1EA32BB900C62E9D /* UIView+Geometry.m */; };
-		CC1349D21EA32BB900C62E9D /* UIView+IBInspect.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1349CC1EA32BB900C62E9D /* UIView+IBInspect.m */; };
-		CC1349D61EA32BC800C62E9D /* MBProgressHUD+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1349D51EA32BC800C62E9D /* MBProgressHUD+Add.m */; };
-		CC1349DA1EA32C3C00C62E9D /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1349D91EA32C3C00C62E9D /* MBProgressHUD.m */; };
 		CC1349DF1EA3364600C62E9D /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1349DE1EA3364600C62E9D /* Model.m */; };
 		CC1349E41EA33BEF00C62E9D /* SetFontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1349E31EA33BEF00C62E9D /* SetFontViewController.m */; };
-		CC1349EA1EA342A900C62E9D /* CustomActionSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1349E91EA342A900C62E9D /* CustomActionSheetView.m */; };
 		CC1349EF1EA35CA200C62E9D /* Libian.ttc in Resources */ = {isa = PBXBuildFile; fileRef = CC1349EE1EA35C9200C62E9D /* Libian.ttc */; };
 		CC1349F31EA3651E00C62E9D /* MakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1349F11EA3651E00C62E9D /* MakeViewController.m */; };
+		CC1C001C1EAC5579009B5498 /* NameManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1C001B1EAC5579009B5498 /* NameManager.m */; };
+		CC1C00211EAC6BEC009B5498 /* loveway.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC1C00201EAC69A1009B5498 /* loveway.ttf */; };
+		CC4A25A81EAB25C00074322F /* name.txt in Resources */ = {isa = PBXBuildFile; fileRef = CC4A25A71EAB25C00074322F /* name.txt */; };
+		CCF3249F1EAFAC2600A9F7E9 /* CustomActionSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF3249E1EAFAC2600A9F7E9 /* CustomActionSheetView.m */; };
+		CCF324A21EAFAF6400A9F7E9 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF324A11EAFAF6400A9F7E9 /* MainViewController.m */; };
+		CCF324A51EB0EDAE00A9F7E9 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF324A41EB0EDAE00A9F7E9 /* SearchViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,30 +36,25 @@
 		CC1349B91EA329DD00C62E9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC1349BC1EA329DD00C62E9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC1349BE1EA329DD00C62E9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CC1349C51EA32BB900C62E9D /* UIColor+TAToolkit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+TAToolkit.h"; sourceTree = "<group>"; };
-		CC1349C61EA32BB900C62E9D /* UIColor+TAToolkit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+TAToolkit.m"; sourceTree = "<group>"; };
-		CC1349C71EA32BB900C62E9D /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = "<group>"; };
-		CC1349C81EA32BB900C62E9D /* UIView+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = "<group>"; };
-		CC1349C91EA32BB900C62E9D /* UIView+Geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Geometry.h"; sourceTree = "<group>"; };
-		CC1349CA1EA32BB900C62E9D /* UIView+Geometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Geometry.m"; sourceTree = "<group>"; };
-		CC1349CB1EA32BB900C62E9D /* UIView+IBInspect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+IBInspect.h"; sourceTree = "<group>"; };
-		CC1349CC1EA32BB900C62E9D /* UIView+IBInspect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+IBInspect.m"; sourceTree = "<group>"; };
-		CC1349D41EA32BC800C62E9D /* MBProgressHUD+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Add.h"; sourceTree = "<group>"; };
-		CC1349D51EA32BC800C62E9D /* MBProgressHUD+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Add.m"; sourceTree = "<group>"; };
-		CC1349D71EA32BFA00C62E9D /* Toolkit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Toolkit.h; sourceTree = "<group>"; };
-		CC1349D81EA32C3C00C62E9D /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		CC1349D91EA32C3C00C62E9D /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		CC1349DB1EA32C8500C62E9D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		CC1349DC1EA32D3400C62E9D /* constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = constant.h; sourceTree = "<group>"; };
 		CC1349DD1EA3364600C62E9D /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
 		CC1349DE1EA3364600C62E9D /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
 		CC1349E21EA33BEF00C62E9D /* SetFontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetFontViewController.h; sourceTree = "<group>"; };
 		CC1349E31EA33BEF00C62E9D /* SetFontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetFontViewController.m; sourceTree = "<group>"; };
-		CC1349E81EA342A900C62E9D /* CustomActionSheetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomActionSheetView.h; sourceTree = "<group>"; };
-		CC1349E91EA342A900C62E9D /* CustomActionSheetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomActionSheetView.m; sourceTree = "<group>"; };
 		CC1349EE1EA35C9200C62E9D /* Libian.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Libian.ttc; sourceTree = "<group>"; };
 		CC1349F01EA3651E00C62E9D /* MakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MakeViewController.h; sourceTree = "<group>"; };
 		CC1349F11EA3651E00C62E9D /* MakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MakeViewController.m; sourceTree = "<group>"; };
+		CC1C001A1EAC5579009B5498 /* NameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NameManager.h; sourceTree = "<group>"; };
+		CC1C001B1EAC5579009B5498 /* NameManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NameManager.m; sourceTree = "<group>"; };
+		CC1C00201EAC69A1009B5498 /* loveway.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = loveway.ttf; sourceTree = "<group>"; };
+		CC4A25A71EAB25C00074322F /* name.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = name.txt; sourceTree = "<group>"; };
+		CCF3249D1EAFAC2600A9F7E9 /* CustomActionSheetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomActionSheetView.h; sourceTree = "<group>"; };
+		CCF3249E1EAFAC2600A9F7E9 /* CustomActionSheetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomActionSheetView.m; sourceTree = "<group>"; };
+		CCF324A01EAFAF6400A9F7E9 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		CCF324A11EAFAF6400A9F7E9 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		CCF324A31EB0EDAE00A9F7E9 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		CCF324A41EB0EDAE00A9F7E9 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +88,6 @@
 			isa = PBXGroup;
 			children = (
 				CC1349E01EA3365000C62E9D /* Model */,
-				CC1349C41EA32B8100C62E9D /* Toolkit */,
 				CC1349E11EA33BD000C62E9D /* Class */,
 				CC1349AD1EA329DD00C62E9D /* Supporting Files */,
 			);
@@ -118,33 +111,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		CC1349C41EA32B8100C62E9D /* Toolkit */ = {
-			isa = PBXGroup;
-			children = (
-				CC1349D71EA32BFA00C62E9D /* Toolkit.h */,
-				CC1349D81EA32C3C00C62E9D /* MBProgressHUD.h */,
-				CC1349D91EA32C3C00C62E9D /* MBProgressHUD.m */,
-				CC1349D41EA32BC800C62E9D /* MBProgressHUD+Add.h */,
-				CC1349D51EA32BC800C62E9D /* MBProgressHUD+Add.m */,
-				CC1349C51EA32BB900C62E9D /* UIColor+TAToolkit.h */,
-				CC1349C61EA32BB900C62E9D /* UIColor+TAToolkit.m */,
-				CC1349C71EA32BB900C62E9D /* UIView+AutoLayout.h */,
-				CC1349C81EA32BB900C62E9D /* UIView+AutoLayout.m */,
-				CC1349C91EA32BB900C62E9D /* UIView+Geometry.h */,
-				CC1349CA1EA32BB900C62E9D /* UIView+Geometry.m */,
-				CC1349CB1EA32BB900C62E9D /* UIView+IBInspect.h */,
-				CC1349CC1EA32BB900C62E9D /* UIView+IBInspect.m */,
-				CC1349E81EA342A900C62E9D /* CustomActionSheetView.h */,
-				CC1349E91EA342A900C62E9D /* CustomActionSheetView.m */,
-			);
-			name = Toolkit;
-			sourceTree = "<group>";
-		};
 		CC1349E01EA3365000C62E9D /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				CC1349DD1EA3364600C62E9D /* Model.h */,
 				CC1349DE1EA3364600C62E9D /* Model.m */,
+				CC1C001A1EAC5579009B5498 /* NameManager.h */,
+				CC1C001B1EAC5579009B5498 /* NameManager.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -152,12 +125,18 @@
 		CC1349E11EA33BD000C62E9D /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				CCF3249D1EAFAC2600A9F7E9 /* CustomActionSheetView.h */,
+				CCF3249E1EAFAC2600A9F7E9 /* CustomActionSheetView.m */,
 				CC1349B31EA329DD00C62E9D /* ViewController.h */,
 				CC1349B41EA329DD00C62E9D /* ViewController.m */,
 				CC1349E21EA33BEF00C62E9D /* SetFontViewController.h */,
 				CC1349E31EA33BEF00C62E9D /* SetFontViewController.m */,
 				CC1349F01EA3651E00C62E9D /* MakeViewController.h */,
 				CC1349F11EA3651E00C62E9D /* MakeViewController.m */,
+				CCF324A01EAFAF6400A9F7E9 /* MainViewController.h */,
+				CCF324A11EAFAF6400A9F7E9 /* MainViewController.m */,
+				CCF324A31EB0EDAE00A9F7E9 /* SearchViewController.h */,
+				CCF324A41EB0EDAE00A9F7E9 /* SearchViewController.m */,
 			);
 			name = Class;
 			sourceTree = "<group>";
@@ -165,7 +144,9 @@
 		CC1349EB1EA3569300C62E9D /* FontResource */ = {
 			isa = PBXGroup;
 			children = (
+				CC1C00201EAC69A1009B5498 /* loveway.ttf */,
 				CC1349EE1EA35C9200C62E9D /* Libian.ttc */,
+				CC4A25A71EAB25C00074322F /* name.txt */,
 			);
 			name = FontResource;
 			sourceTree = "<group>";
@@ -229,7 +210,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC1C00211EAC6BEC009B5498 /* loveway.ttf in Resources */,
 				CC1349EF1EA35CA200C62E9D /* Libian.ttc in Resources */,
+				CC4A25A81EAB25C00074322F /* name.txt in Resources */,
 				CC1349BD1EA329DD00C62E9D /* LaunchScreen.storyboard in Resources */,
 				CC1349BA1EA329DD00C62E9D /* Assets.xcassets in Resources */,
 				CC1349B81EA329DD00C62E9D /* Main.storyboard in Resources */,
@@ -243,19 +226,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC1349D01EA32BB900C62E9D /* UIView+AutoLayout.m in Sources */,
 				CC1349B51EA329DD00C62E9D /* ViewController.m in Sources */,
-				CC1349CF1EA32BB900C62E9D /* UIColor+TAToolkit.m in Sources */,
-				CC1349D61EA32BC800C62E9D /* MBProgressHUD+Add.m in Sources */,
+				CC1C001C1EAC5579009B5498 /* NameManager.m in Sources */,
+				CCF324A51EB0EDAE00A9F7E9 /* SearchViewController.m in Sources */,
 				CC1349E41EA33BEF00C62E9D /* SetFontViewController.m in Sources */,
 				CC1349B21EA329DD00C62E9D /* AppDelegate.m in Sources */,
-				CC1349D21EA32BB900C62E9D /* UIView+IBInspect.m in Sources */,
+				CCF324A21EAFAF6400A9F7E9 /* MainViewController.m in Sources */,
 				CC1349F31EA3651E00C62E9D /* MakeViewController.m in Sources */,
-				CC1349EA1EA342A900C62E9D /* CustomActionSheetView.m in Sources */,
-				CC1349DA1EA32C3C00C62E9D /* MBProgressHUD.m in Sources */,
-				CC1349D11EA32BB900C62E9D /* UIView+Geometry.m in Sources */,
 				CC1349AF1EA329DD00C62E9D /* main.m in Sources */,
 				CC1349DF1EA3364600C62E9D /* Model.m in Sources */,
+				CCF3249F1EAFAC2600A9F7E9 /* CustomActionSheetView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +398,7 @@
 				CC1349C31EA329DD00C62E9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

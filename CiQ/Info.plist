@@ -37,6 +37,7 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>Libian.ttc</string>
+		<string>loveway.ttf</string>
 	</array>
 	<key>NSCameraUsageDescription</key>
 	<string>use camera</string>

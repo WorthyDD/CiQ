@@ -13,6 +13,6 @@
 
 #define SCREEN_HEIGHT  APPLICATION_KEYWINDOW.bounds.size.height
 #define SCREEN_WIDTH   APPLICATION_KEYWINDOW.bounds.size.width
-#define THEME_COLOR [UIColor colorWithRGB:0x30d2d2]
+#define THEME_COLOR [UIColor colorWithRed:64/255.0 green:208/255.0 blue:208/255.0 alpha:1.0]
 
 #endif /* constant_h */

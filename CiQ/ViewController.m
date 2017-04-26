@@ -19,6 +19,7 @@ static CGFloat keyboardHeight = 240;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *tableViewheight;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *searchBarTop;//265 default
 @property (weak, nonatomic) IBOutlet UIImageView *logo;
+@property (weak, nonatomic) IBOutlet UIButton *genderBn;
 @property (nonatomic) NSArray *results;
 
 @end
@@ -43,7 +44,7 @@ static CGFloat keyboardHeight = 240;
 
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
-    _confirmBn.frame = CGRectMake(0, 0, _tableView.width, 44);
+    _confirmBn.frame = CGRectMake(0, 0, _tableView.frame.size.width, 44);
 }
 
 
@@ -76,7 +77,7 @@ static CGFloat keyboardHeight = 240;
 - (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar {
     
     _searchBarTop.constant = 20;
-    _tableViewheight.constant = SCREEN_HEIGHT-20-_searchBar.height-10 - keyboardHeight;
+    _tableViewheight.constant = SCREEN_HEIGHT-20-_searchBar.frame.size.height-10 - keyboardHeight;
     [UIView animateWithDuration:0.3 animations:^{
         self.logo.alpha = 0;
         [self.view layoutIfNeeded];
@@ -116,4 +117,8 @@ static CGFloat keyboardHeight = 240;
 - (void)handleTapConfirmButton:(UIButton *)sender {
     
 }
+
+- (IBAction)tapGenderBn:(UIButton *)sender {
+}
+
 @end

@@ -7,19 +7,13 @@
 //
 
 #import "Model.h"
+#import "NameManager.h"
 
 @implementation Model
 
 
 + (NSDictionary *)names {
-    static NSDictionary *dic;
-    if (!dic) {
-        dic = @{@"Jack" : @"杰克",
-                @"Allen" : @"艾伦",
-                @"Luis" : @"路易斯",
-                @"Tom" : @"汤姆"};
-    }
-    return dic;
+    return [NameManager shareManager].names;
 }
 
 + (NSArray *)namesForKey:(NSString *)key {

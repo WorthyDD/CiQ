@@ -7,6 +7,7 @@
 //
 
 #import "MakeViewController.h"
+#import "Model.h"
 
 @interface MakeViewController ()
 
@@ -20,7 +21,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+
     
+    [self.navigationController setNavigationBarHidden:NO];
     _iv = [[UIImageView alloc] initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-50-64)];
     [_iv setContentMode:UIViewContentModeScaleAspectFit];
     _iv.image = _img;
@@ -55,7 +58,6 @@
     
     UIImage *img = [self capture];
     UIImageWriteToSavedPhotosAlbum(img, NULL, NULL, NULL);
-    [MBProgressHUD showSuccess:@"Save Success" toView:self.view];
 }
 
 //获取屏幕截屏方法
@@ -103,7 +105,7 @@
     NSAttributedString *text = self.label.attributedText;
     NSDictionary *dic = [text attributesAtIndex:0 effectiveRange:NULL];
     UIFont *font = dic[NSFontAttributeName];
-    NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithString:text.string attributes:@{NSFontAttributeName:[UIFont fontWithName:font.fontName size:21+sender.value*4],NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithString:text.string attributes:@{NSFontAttributeName:[UIFont fontWithName:font.fontName size:21+sender.value*4],NSForegroundColorAttributeName:[UIColor blackColor]}];
     self.label.attributedText = str;
     [self.label sizeToFit];
 }
